@@ -2,12 +2,12 @@
 let dep = document.getElementById("dep")
 
 const capital = () => {
-    let valor = prompt("Dime un Departamento");
+    let valor = prompt("Dime un Departamento o ingresa salir para terminar");
 
-    while (valor !== "Amazonas" && valor !== "Antioquia" && valor !== "Arauca" && valor !== "Atlantico" && valor !== "Bolivar" && valor !== "Boyaca" && valor !== "Caldas" && valor !== "Caqueta" && valor !== "Casanare" && valor !== "Cauca" && valor !== "Cesar" && valor !== "Choco" && valor !== "Cordoba" && valor !== "Cundinamarca" && valor !== "Guainia" && valor !== "Guaviare" && valor !== "Huila"&& valor !== "Guajira" && valor !== "Magdalena" && valor !== "Meta" && valor !== "Nariño" && valor !== "Norte de santandder" && valor !== "Putumayo" && valor !== "Quindio" && valor !== "Risaralda" && valor !== "San andres y providencia" && valor !== "Santander" && valor !== "Sucre" && valor !== "Tolima" && valor !== "Valle del cauca" && valor !== "Vaupes" && valor !== "Vichada") {
-        valor = prompt("Dime un Departamento valido");
+    while (valor !== "Amazonas" && valor !== "Antioquia" && valor !== "Arauca" && valor !== "Atlantico" && valor !== "Bolivar" && valor !== "Boyaca" && valor !== "Caldas" && valor !== "Caqueta" && valor !== "Casanare" && valor !== "Cauca" && valor !== "Cesar" && valor !== "Choco" && valor !== "Cordoba" && valor !== "Cundinamarca" && valor !== "Guainia" && valor !== "Guaviare" && valor !== "Huila"&& valor !== "Guajira" && valor !== "Magdalena" && valor !== "Meta" && valor !== "Nariño" && valor !== "Norte de santandder" && valor !== "Putumayo" && valor !== "Quindio" && valor !== "Risaralda" && valor !== "San andres y providencia" && valor !== "Santander" && valor !== "Sucre" && valor !== "Tolima" && valor !== "Valle del cauca" && valor !== "Vaupes" && valor !== "Vichada" && valor!=="salir") {
+        valor = prompt("Dime un Departamento valido o ingresa salir para terminar");
     }
-    
+
     if (valor === "Amazonas") {
         alert("su capital es leticia")
         window.location.href = "https://es.wikipedia.org/wiki/Amazonas_(Colombia)"
@@ -137,9 +137,10 @@ const capital = () => {
         alert("su capital es Puerto carreño")
         window.location = "https://es.wikipedia.org/wiki/Vichada"
     }
-    else{
-        alert("no es una capital valida")
+    if (valor === "salir"){
+        return false;
     }
+   
 };
 
 window.onclick = function () {
