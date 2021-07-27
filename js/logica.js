@@ -3,11 +3,16 @@ let dep = document.getElementById("dep")
 
 const capital = () => {
     let valor = prompt("Dime un Departamento");
+
+    while (valor !== "Amazonas" && valor !== "Antioquia" && valor !== "Arauca" && valor !== "Atlantico" && valor !== "Bolivar" && valor !== "Boyaca" && valor !== "Caldas" && valor !== "Caqueta" && valor !== "Casanare" && valor !== "Cauca" && valor !== "Cesar" && valor !== "Choco" && valor !== "Cordoba" && valor !== "Cundinamarca" && valor !== "Guainia" && valor !== "Guaviare" && valor !== "Huila"&& valor !== "Guajira" && valor !== "Magdalena" && valor !== "Meta" && valor !== "Nariño" && valor !== "Norte de santandder" && valor !== "Putumayo" && valor !== "Quindio" && valor !== "Risaralda" && valor !== "San andres y providencia" && valor !== "Santander" && valor !== "Sucre" && valor !== "Tolima" && valor !== "Valle del cauca" && valor !== "Vaupes" && valor !== "Vichada") {
+        valor = prompt("Dime un Departamento valido");
+    }
+    
     if (valor === "Amazonas") {
         alert("su capital es leticia")
         window.location.href = "https://es.wikipedia.org/wiki/Amazonas_(Colombia)"
     }
-    else if (valor === "Anioquia") {
+    else if (valor === "Antioquia") {
         alert("su capital es Medellin")
         window.location = "https://es.wikipedia.org/wiki/Antioquia)"
 
